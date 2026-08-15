@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+<!-- 标头图片及标题-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/bg_login"
+        android:gravity="bottom"
+        android:text="登录账号"
+        android:paddingStart="40dp"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+
+<!--输入框 手机号 密码-->
+    <!-- 手机号输入框 -->
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="手机号"
+        android:drawableLeft="@drawable/ll_ic_phone"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingHorizontal="24dp"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:drawableTint="#666666"
+        android:textSize="18sp" />
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="密码"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ll_ic_lock"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="24dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        android:drawableTint="#666666"
+        android:textSize="18sp" />
+
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:text="登录"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/btn_big"
+        android:elevation="4dp" />
+
+    <!-- 注册提示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还未创建帐号？"
+            />
+
+        <TextView
+            android:id="@+id/register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="点击注册"
+            android:textColor="#FF0000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+</LinearLayout>

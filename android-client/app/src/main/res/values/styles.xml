@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 在res/values/styles.xml中定义 -->
+    <style name="BottomNavText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>  <!-- 字体大小，12sp为示例 -->
+        <item name="android:fontFamily">sans-serif-medium</item>  <!-- 可选：字体家族 -->
+    </style>
+</resources>

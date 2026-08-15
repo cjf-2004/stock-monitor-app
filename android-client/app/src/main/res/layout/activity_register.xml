@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <!-- 标头图片及标题-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_login"
+        android:gravity="bottom"
+        android:text="注册账号"
+        android:paddingStart="40dp"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+
+    <!--输入框 手机号 密码-->
+    <!-- 手机号输入框 -->
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="手机号(11位数字)"
+        android:drawableLeft="@drawable/ll_ic_phone"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingHorizontal="10dp"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:drawableTint="#666666"
+        android:textSize="16sp" />
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="密码(8~16位，支持英文大小写/数字/下划线)"
+        android:drawableLeft="@drawable/ll_ic_lock"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:drawableTint="#666666"
+        android:textSize="16sp" />
+
+    <!-- 确认密码输入框 -->
+    <EditText
+        android:id="@+id/et_password_ag"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="再次输入密码"
+        android:drawableLeft="@drawable/ll_ic_doublecheck"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"
+        android:drawableTint="#666666"
+        android:textSize="16sp" />
+
+    <!-- 验证码布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <!-- 验证码输入框 -->
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="请输入验证码"
+            android:background="@drawable/input_bg"
+            android:paddingHorizontal="10dp"
+            android:inputType="number"
+            android:drawableTint="#666666"
+            android:textSize="16sp" />
+
+        <!-- 获取验证码按钮 -->
+        <Button
+            android:id="@+id/btn_get_verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:text="获取验证码"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_small"
+            android:paddingHorizontal="10dp"
+            android:minWidth="100dp" />
+    </LinearLayout>
+
+    <!-- 注册按钮 -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:text="注册"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/btn_big"
+        android:elevation="4dp" />
+
+    <!-- 注册提示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账号？"
+            />
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="点击登录"
+            android:textColor="#FF0000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+</LinearLayout>
